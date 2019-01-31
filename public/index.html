@@ -7,5 +7,18 @@
 </head>
 <body>
     <p>Welcome to Messenger!</p>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+        const socket = io();
+
+        socket.on('connect', () => {
+            console.log('connected to server');
+        });
+
+        socket.on('disconnect', () => {
+            console.log('disconnected from the server');
+        } )
+    </script>
 </body>
 </html>
