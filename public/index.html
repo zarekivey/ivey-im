@@ -1,20 +1,30 @@
-<html lang="en">
+<!DOCTYPE html>
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Messenger App</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
-    <p>Welcome to Messenger!</p>
 
-    <ol id="messages"></ol>
+<body class="chat">
 
-    <form id="message-form" >
-        <input name="message" type="text" placeholder="Message" />
+  <div class="chat__sidebar">
+    <h3>People</h3>
+    <div id="users"></div>
+  </div>
+
+  <div class="chat__main">
+    <ol id="messages" class="chat__messages"></ol>
+
+    <div class="chat__footer">
+      <form id="message-form">
+        <input name="message" type="text" placeholder="Message" autofocus autocomplete="off"/>
         <button>Send</button>
-    </form>
-    <button id="send-location">Send Location</button>
+      </form>
+      <button id="send-location">Send location</button>
+    </div>
+  </div>
 
     <script src="/socket.io/socket.io.js"></script>
     <script src="/js/libs/jquery-3.3.1.min.js"></script>
