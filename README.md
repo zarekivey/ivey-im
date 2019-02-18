@@ -9,7 +9,7 @@ NodeJs, Scoket.io, jQuery, ExpressJs, MoustacheJs, Mocha, Google Maps API
 ## Contributors
 Malachi Ivey
 
-## Challeneges
+## Challenges
 ### Web Sockets / Socket.io
 Having never used websockets and events before, setting them up was a real challenge. I had to explore sokcet.io's documentation deeply to get the features that I wanted in place. Even after that, I ran into issues and had to test my functions which later helped me better learn how to use them.
 
